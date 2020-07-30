@@ -12,8 +12,6 @@ public class Demo {
 /*        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext();
         ac.register(AppConfig.class);
         ac.refresh();*/
-        System.out.println(System.getProperty("java.class.path"));//系统的classpaht路径
-        System.out.println(System.getProperty("user.dir"));//用户的当前路径
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         JiaJia jj = (JiaJia) ac.getBean("jiajia");
         jj.help();
