@@ -9,11 +9,11 @@ import org.springframework.stereotype.Component;
 public class Demo {
 
     public static void main(String[] args) {
-/*        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext();
-        ac.register(AppConfig.class);
-        ac.refresh();*/
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
-        JiaJia jj = (JiaJia) ac.getBean("jiajia");
-        jj.help();
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+        //ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        //AppService app = (AppService) ac.getBean("appService");
+        //System.out.println(ac.getBean(MaMa.class));
+        JiaJia jiaJia = new JiaJia();
+        jiaJia.help();
     }
 }

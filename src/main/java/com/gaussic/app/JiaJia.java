@@ -8,4 +8,19 @@ public class JiaJia implements Action{
     public void help(){
         System.out.println("jiajia");
     }
+
+    @Override
+    public void help1() {
+
+    }
+
+    @Override
+    public void helpIn1() {
+        
+    }
+
+    @Override
+    public void helpIn2() {
+
+    }
 }
