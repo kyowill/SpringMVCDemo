@@ -11,7 +11,8 @@ public class Demo3 {
 
         RootBeanDefinition rootBeanDefinition = new RootBeanDefinition();
         rootBeanDefinition.getPropertyValues().add("name", "yy");
-        rootBeanDefinition.setBeanClass(BeanService.class);
+        rootBeanDefinition.setAbstract(true);
+        //rootBeanDefinition.setBeanClass(BeanService.class);实例化时
 
 
         ChildBeanDefinition childBeanDefinition = new ChildBeanDefinition("bs");
