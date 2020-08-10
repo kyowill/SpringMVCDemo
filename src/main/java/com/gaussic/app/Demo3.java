@@ -21,6 +21,11 @@ public class Demo3 {
         ac.registerBeanDefinition("bs", rootBeanDefinition);
         ac.registerBeanDefinition("yk", childBeanDefinition);
 
+        ac.register(BeanService.class);
         ac.refresh();
+
+        Thread thread = new Thread();
+        StringBuffer s;
+        StringBuilder ss;
     }
 }
